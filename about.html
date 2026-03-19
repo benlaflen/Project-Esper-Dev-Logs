@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Project: Esper Dev Log</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-block">
+        <span class="logo-eyebrow">developer journal</span>
+        <h1 class="site-title"><a href="index.html">Project: Esper</a></h1>
+        <span class="logo-sub">a roguelike, prioritizing depth</span>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Log</a>
+        <a href="about.html" class="nav-link active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <article class="about-article">
+      <h2 class="about-title">About the Project</h2>
+      <div class="about-body">
+        <p>Project: Esper is a traditional roguelike — turn-based, grid-based, permadeath — in the lineage of Nethack, ADOM, Caves of Qud, etc. The goal is to take what the genre already does well and solve its most pernicious problem: late game depth.</p>
+
+        <p>In most traditional roguelikes, power eventually converges. Builds homogenize, encounters stop being interesting, and the late game becomes a formality, time sink, or checklist. Project: Esper addresses this by making every effect conditional. Item effects are powered by predicates — conditions that must remain true for the effect to stay active. More powerful effects require predicates that are in turn more complex to set up or maintain, which means you have to actively maintain a wider attack surface to keep your build running. Combat stays dynamic because the conditions of your power are always in play, even as you become more powerful.</p>
+
+        <p>For example, consider fire resistance. In Nethack, at some point during the run you just need to make sure to eat a red mold, fire ant, red dragon, etc. and you've got the property forever (with slight exceptions). In Qud, fire resistance is tied to your armor, so you just equip the armor with the best value, maybe take a consumable or two for some additional resistance when needed. In Project: Esper, an endgame fire resistance effect might look more like: "While a clone of this item is in the Plane of Ice, +100 fire resistance." Same effect, much more interesting proposition; the item is a subquest unto itself. How to get to the Plane of Ice? How to make a copy of this item? And how to keep it that way? A fire-based monster isn't necessarily dead in the water because any of the following remain as attack surfaces:<ul><li>Destroy the effect-granting item</li><li>Destroy the clone of the effect-granting item</li><li>Remove the clone from the Plane of Ice</li><li>Cause the clone to no longer be a clone of the effect-granting item (polymorph, anyone?)</li></ul></p>
+
+        <p>The whole system is built on a custom effect scripting language that not only allows adding new content to be smooth as butter, but also for item effects, enemies, environment interactions, and things like spells to be fully procedurally generated — not just randomized stats, but genuinely novel mechanics, legibly communicated to the player.</p>
+
+        <p>This site serves as the developer journal and main communication hub for the Project. It will be updated regularly with progress on the game (typically weekly) and enable us to share our philosophy and design direction with the community for feedback.</p>
+
+        <p>Project: Esper is being built entirely as a hobby project. That means no crowdfunding is planned to be needed, but also that progress may be slow or fizzle out. Please be patient with the team as we work to deliver the best possible traditional roguelike experience.</p>
+      </div>
+      <div class="about-links">
+        <a href="https://twitter.com/https://x.com/Project_Esper" target="_blank" class="about-link">→ Follow on Twitter/X</a>
+        <a href="index.html" class="about-link">→ Read the log</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">built in public</span>
+      <div style="display:flex;gap:1.2rem;">
+        <a href="https://x.com/Project_Esper" target="_blank" class="footer-social">Twitter/X</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
